@@ -1,20 +1,20 @@
 class TetherUtils < Formula
   desc "Utilities for Tether Systems"
   homepage "https://github.com/RandomStudio/tether"
-  version "0.11.1"
+  version "0.11.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandomStudio/tether/releases/download/tether-utils-v0.11.1/tether-utils-aarch64-apple-darwin.tar.xz"
-      sha256 "5c4faf57493c4da2ac755d051086a9c633f5cf4ae396511fce8a9e895a7eeffa"
+      url "https://github.com/RandomStudio/tether/releases/download/tether-utils-v0.11.2/tether-utils-aarch64-apple-darwin.tar.xz"
+      sha256 "a915b05a476b1b18b9f96eedc57a194dde761ea90348e4b701156a8017053712"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandomStudio/tether/releases/download/tether-utils-v0.11.1/tether-utils-x86_64-apple-darwin.tar.xz"
-      sha256 "db4e11a90bf665196100b445a35cc529e0b2b0d0dc7991fdba115f6aaa0914a8"
+      url "https://github.com/RandomStudio/tether/releases/download/tether-utils-v0.11.2/tether-utils-x86_64-apple-darwin.tar.xz"
+      sha256 "200502602ca25dab3c117bfe9f43de68eff91ce2fac84495c4d56b192d30fb23"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/RandomStudio/tether/releases/download/tether-utils-v0.11.1/tether-utils-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "3d111cd3be5c60cb96c4f14e9eefe3270f0eb9745359748e9a7126edb6742fa4"
+    url "https://github.com/RandomStudio/tether/releases/download/tether-utils-v0.11.2/tether-utils-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "694f26cfe1de86eb205ef484af2f47a3ecdaebc4818835835193d21b4dbf0116"
   end
   license "MIT"
 
