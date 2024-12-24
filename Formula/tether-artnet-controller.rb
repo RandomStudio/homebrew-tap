@@ -1,20 +1,20 @@
 class TetherArtnetController < Formula
   desc "A remote control software lighting desk"
   homepage "https://github.com/RandomStudio/tether-artnet-controller"
-  version "0.7.4"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandomStudio/tether-artnet-controller/releases/download/v0.7.4/tether-artnet-controller-aarch64-apple-darwin.tar.xz"
-      sha256 "b326ba7d5107ddb2751e5262d7edd7045dedcda69968e130db805825529ff86f"
+      url "https://github.com/RandomStudio/tether-artnet-controller/releases/download/v0.8.0/tether-artnet-controller-aarch64-apple-darwin.tar.xz"
+      sha256 "c61f887b032f60d19907c6867efde17dbfc467178aa73c93492abb4f96f7e317"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandomStudio/tether-artnet-controller/releases/download/v0.7.4/tether-artnet-controller-x86_64-apple-darwin.tar.xz"
-      sha256 "5556bd808b9bcf1313fcbd3f10e9d74b0118f2755f7c5dcb9c7538aa3b66e2e7"
+      url "https://github.com/RandomStudio/tether-artnet-controller/releases/download/v0.8.0/tether-artnet-controller-x86_64-apple-darwin.tar.xz"
+      sha256 "db5723568ed81886ee104abfe4c847a9fa4043b728322e49612bd95db0c45538"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/RandomStudio/tether-artnet-controller/releases/download/v0.7.4/tether-artnet-controller-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "ba88de42d5de90b2e95eb26efec872d910561b32824b0d9c5836943276d2a39c"
+    url "https://github.com/RandomStudio/tether-artnet-controller/releases/download/v0.8.0/tether-artnet-controller-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "04ebc2624874a5eb749624bba113180cadde612726eb56e5c205a8e48a48ad35"
   end
   license "MIT"
 
