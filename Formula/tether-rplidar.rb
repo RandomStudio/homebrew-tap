@@ -1,20 +1,20 @@
 class TetherRplidar < Formula
   desc "RPLIDAR scanning over Tether messaging"
   homepage "https://github.com/RandomStudio/tether-rplidar-rs"
-  version "0.7.2"
+  version "0.7.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandomStudio/tether-rplidar-rs/releases/download/v0.7.2/tether-rplidar-aarch64-apple-darwin.tar.xz"
-      sha256 "f3fdc1379dcaf03368eae94fd0fc0459cce72915975a1e006fe31a584bd7232a"
+      url "https://github.com/RandomStudio/tether-rplidar-rs/releases/download/v0.7.3/tether-rplidar-aarch64-apple-darwin.tar.xz"
+      sha256 "8a9362c54064e2e2e901a8f1e0c01115358ac7afbc7528737f7ad092b33a9112"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandomStudio/tether-rplidar-rs/releases/download/v0.7.2/tether-rplidar-x86_64-apple-darwin.tar.xz"
-      sha256 "e9bb7175ce176e82f4fec8da67546eb1b67b8abea14316a095c83fc5e9e21d4b"
+      url "https://github.com/RandomStudio/tether-rplidar-rs/releases/download/v0.7.3/tether-rplidar-x86_64-apple-darwin.tar.xz"
+      sha256 "0d36da30671c5b843b8fd2f9c9c5a1f495838342eac7a9e1e216504fc7b38643"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/RandomStudio/tether-rplidar-rs/releases/download/v0.7.2/tether-rplidar-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "8d2aa2b9123a9d12223d816de00c66d63620d7aeece567b969de4523866fda5b"
+    url "https://github.com/RandomStudio/tether-rplidar-rs/releases/download/v0.7.3/tether-rplidar-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "ea9e7363a3e992a3d0f55ea606a9720ba29bccd28275ca61671a53420461b8d5"
   end
   license "MIT"
 
