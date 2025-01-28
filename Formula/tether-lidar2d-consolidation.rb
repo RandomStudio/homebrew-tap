@@ -1,20 +1,20 @@
 class TetherLidar2dConsolidation < Formula
   desc "Tether Lidar2D Consolidator Agent, Rust edition"
   homepage "https://github.com/RandomStudio/tether-lidar2d-consolidation-rs"
-  version "1.0.2"
+  version "1.0.3"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandomStudio/tether-lidar2d-consolidation-rs/releases/download/v1.0.2/tether-lidar2d-consolidation-aarch64-apple-darwin.tar.xz"
-      sha256 "9cfc535c2d3a0452a9e0de2637eca338160def00d65b4b02eda44a3e15917954"
+      url "https://github.com/RandomStudio/tether-lidar2d-consolidation-rs/releases/download/v1.0.3/tether-lidar2d-consolidation-aarch64-apple-darwin.tar.xz"
+      sha256 "532e189fb8e89f5ecaba2d05e07bc7c0242a95048837f3b0fbf6a4c474ca7c48"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandomStudio/tether-lidar2d-consolidation-rs/releases/download/v1.0.2/tether-lidar2d-consolidation-x86_64-apple-darwin.tar.xz"
-      sha256 "758608f248ac64af58fbef86ee66cd7d686a90c15d16e3b88490288477b5db44"
+      url "https://github.com/RandomStudio/tether-lidar2d-consolidation-rs/releases/download/v1.0.3/tether-lidar2d-consolidation-x86_64-apple-darwin.tar.xz"
+      sha256 "bf93d08bd4686a8c454f404c3b084c19314a049f5f795121c373d3defb20c84d"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/RandomStudio/tether-lidar2d-consolidation-rs/releases/download/v1.0.2/tether-lidar2d-consolidation-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "659208da39d25635d6a6ac1b9ad1d7a027bc1fa190ab42acad2783f27a98515a"
+    url "https://github.com/RandomStudio/tether-lidar2d-consolidation-rs/releases/download/v1.0.3/tether-lidar2d-consolidation-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "83b96031fa08eed4efcdf41dc2c7c056920804640b141af93fbca64a317b69ef"
   end
   license "MIT"
 
