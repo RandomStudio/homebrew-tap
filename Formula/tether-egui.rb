@@ -1,20 +1,20 @@
 class TetherEgui < Formula
   desc "GUI for building and testing Tether-based applications"
   homepage "https://github.com/RandomStudio/tether-egui"
-  version "0.10.2"
+  version "0.10.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandomStudio/tether-egui/releases/download/v0.10.2/tether-egui-aarch64-apple-darwin.tar.xz"
-      sha256 "8da1cc15347c560813cc22324d4aaa0a7b61d47be164e24d3ca6ef0d8d89b7f2"
+      url "https://github.com/RandomStudio/tether-egui/releases/download/v0.10.5/tether-egui-aarch64-apple-darwin.tar.xz"
+      sha256 "65a6d9912cc09828448692b26d97cb8cc0bb394f5a1f539bd6fac832be38ad95"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandomStudio/tether-egui/releases/download/v0.10.2/tether-egui-x86_64-apple-darwin.tar.xz"
-      sha256 "02542a11c468f835638684db6b26e96d35dd3cb8c493dfc7fec9d237bf216d0c"
+      url "https://github.com/RandomStudio/tether-egui/releases/download/v0.10.5/tether-egui-x86_64-apple-darwin.tar.xz"
+      sha256 "bebd9c040e40245d270bcde8f5b405d437367763ab3bba1d575b26c6ebcac830"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/RandomStudio/tether-egui/releases/download/v0.10.2/tether-egui-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "0fe96aef765e78de2e78b1bd58a38329f3d994fa6ee79be67e2e5c0114b12d3c"
+    url "https://github.com/RandomStudio/tether-egui/releases/download/v0.10.5/tether-egui-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "c6d6066eec92e2873d753f8d4fbf016b6ec3e6bdaa8d3008be5fb8885c41e144"
   end
   license "MIT"
 
