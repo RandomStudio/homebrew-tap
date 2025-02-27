@@ -1,20 +1,20 @@
 class TetherSoundscape < Formula
   desc "A remote-controllable audio sequencer"
   homepage "https://github.com/RandomStudio/tether-soundscape-rs"
-  version "0.5.3"
+  version "0.5.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/RandomStudio/tether-soundscape-rs/releases/download/v0.5.3/tether-soundscape-aarch64-apple-darwin.tar.xz"
-      sha256 "9aa88da710ef602bc71be66eaf6a572e443a164eb9f30b9b45ca6809dc84a651"
+      url "https://github.com/RandomStudio/tether-soundscape-rs/releases/download/v0.5.5/tether-soundscape-aarch64-apple-darwin.tar.xz"
+      sha256 "23905cc99ca620403d9ada5ca8c517b1e2130e61fa3636a209fd582c9be0cf53"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/RandomStudio/tether-soundscape-rs/releases/download/v0.5.3/tether-soundscape-x86_64-apple-darwin.tar.xz"
-      sha256 "0728ca0ea98b0eb27b108649c2bd15d4407b1fdd8d266e5e6fcc9f061fdd4d2d"
+      url "https://github.com/RandomStudio/tether-soundscape-rs/releases/download/v0.5.5/tether-soundscape-x86_64-apple-darwin.tar.xz"
+      sha256 "72433acce2930527d4834d4cf2b327d5fb178afa4845798016fb8dddd502edad"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/RandomStudio/tether-soundscape-rs/releases/download/v0.5.3/tether-soundscape-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "29fa0f28fee6657c8ecbf35a41ad9e5febc2b0118974e53104238004ee6d5f7b"
+    url "https://github.com/RandomStudio/tether-soundscape-rs/releases/download/v0.5.5/tether-soundscape-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "078d7cf749eea4ec13aacc8852517fcd7ad983f086933c11df42abf31e242e43"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
